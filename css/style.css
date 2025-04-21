@@ -138,16 +138,6 @@ h3 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);/* Sombra suave */
   color: var(--color-texto);
 }
-
-.caja-aside {
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
-  padding: 30px;
-  margin-bottom: 60px;
-  border: var(--borde-bloque);
-  border-radius: var(--borde-radio);/* Bordes redondeados */
-  color: var(--color-texto);
-  text-align: center;
-}
 /* SECCIÓN MOMENTOS FAVORITOS*/
 .grid-galeria {
   display: grid;
