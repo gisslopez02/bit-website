@@ -322,7 +322,7 @@ select {
     color: #003366;
   }
 
-  .caja-seccion, .caja-aside {
+  .caja-seccion {
     padding: 20px;
     font-size: 18px;
     background-color: rgba(207, 131, 199, 0.9);
@@ -338,7 +338,7 @@ select {
     color: #663300;
   }
 
-  .caja-seccion, .caja-aside {
+  .caja-seccion {
     padding: 25px;
     font-size: 20px;
     background-color: rgba(220, 115, 115, 0.9);
