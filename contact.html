@@ -5,60 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contcto</title>
-    <link rel="shortcut icon" href="assets/logo-contacto.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">  
+    <link rel="shortcut icon" href="./assets/logo-contacto.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="pagina-contact">
     <header>
-        <h1 class="contacto">CONTACTO</h1> 
+        <h1 class="contacto">CONTACTO</h1>
     </header>
     <hr>
     <nav class="navegador">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="./index.html">Inicio</a></li>
             <br>
-            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
             <br>
-            <li><a href="habillidades.html">Mis habilidades</a></li>
+            <li><a href="./habillidades.html">Mis habilidades</a></li>
 
         </ul>
     </nav>
     <hr>
     <main>
         <section>
-            <h2>CONTACTOS PERSONALES</h2>
-            <p>
+            <h2 class="titulo-perso">CONTACTOS PERSONALES</h2>
+            <p class="texto-perso">
                 En esta sección encontrarás toda la información de contacto personal, incluyendo mis redes sociales,
                 número de contacto y el enlace a mi página personal en GitHub.
             </p>
             <hr>
-            <h2>LOGOS</h2>
+            <div class="logos-contacto">
+                <figure>
+                    <a href="https://www.instagram.com/gissslopez02/" target="_blank">
+                        <img src="./assets/instagram.jpg" width="250" height="200" alt="instagram">
+                        <figcaption>INSTAGRAM.</figcaption>
+                    </a>
+                    <a href="https://github.com/gisslopez02" target="_blank">
+                        <img src="./assets/github.png" width="250" height="200" alt="github">
+                        <figcaption>GITHUB.</figcaption>
+                    </a>
+                    <div>
+                        <img src="./assets/logo-contacto.jpg" alt="contacto personal">
+                        <figcaption>CONTACTO PERSONAL <br>3165724458</figcaption>
+                    </div>
+                </figure>
+            </div>
             <hr>
-            <figure>
-                <a href="https://www.instagram.com/gissslopez02/" target="_blank">
-                    <img src="assets/instagram.jpg" width="250" height="200" alt="instagram">
-                    <figcaption>INSTAGRAM.</figcaption>
-                </a>
-                <a href="https://github.com/gisslopez02" target="_blank">
-                    <img src="assets/github.png" width="250" height="200" alt="github">
-                    <figcaption>GITHUB.</figcaption>
-                </a>
-                <img src="assets/logo-contacto.jpg" alt="contacto personal">
-                <figcaption>CONTACTO PERSONAL <br>3165724458</figcaption>
-            </figure>
-            <form >
-                <label for="Nombre">Nombre</label>
-                <input type="text" id="Nombre">
-                <label for="Email">Email</label>
-                <input type="email" id="Email">
-                <label for="Mensaje">Mensaje</label>
-                <textarea id="Mensaje" placeholder="Escribe aqui tu mensaje"></textarea>
-                <button type="submit">Enviar</button>
+            <p></p>
+            <br>
+            <label for="Nombre">Nombre</label>
+            <input type="text" id="Nombre">
+            <label for="Email">Email</label>
+            <input type="email" id="Email">
+            <label for="Mensaje">Mensaje</label>
+            <textarea id="Mensaje" placeholder="Escribe aqui tu mensaje"></textarea>
+            <button type="submit">Enviar</button><br><br>
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto">
+            <label for="origen">¿Cómo me encontraste?</label>
+            <select name="origen">
+                <option>Google</option>
+                <option>Redes Sociales</option>
+                <option>Otro</option>
+            </select>
             </form>
         </section>
     </main>
-    <aside>
+    <aside class="infor-adicional">
         <h3>INFORMACION ADICIONAL</h3>
         <p>Este contenido complementario enriquece la página principal "TODO SOBRE MÍ" al ofrecer una serie de
             ejemplos útiles que pueden servir como guía para la creación de una página personal.
@@ -67,7 +79,8 @@
             complemetario. </a>
         <img src="./assets/contenido-adicional.png" width="30" height="20" alt="contenido complementario">
     </aside>
-    <footer>
+    <hr>
+    <footer class="piedepagina">
         <p>&copy; 2025 Mi Sitio Web.</p>
         <p>Derecho de autor
             <br>
@@ -75,4 +88,5 @@
         </p>
     </footer>
 </body>
+
 </html>

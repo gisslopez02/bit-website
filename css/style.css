@@ -1,146 +1,362 @@
-  /* ESTILOS PARA INDEX*/
-.pagina-principal{ 
-    background-color: #fce1de; 
-    color: #090909;              /* Color del texto */
-    font-family: 'Segoe UI', serif;
+/* ============================================
+   ESTILOS GENERALES PARA TODAS LAS PÁGINAS
+============================================ */
+:root {
+  --color-principal: #a36edb;
+  --color-fondo-bloque: #f2e6ff;
+  --color-texto: #1a1a1a;
+  --color-sombra: rgba(0, 0, 0, 0.15);
+  --borde-bloque: 5px solid palevioletred;
+  --borde-radio: 15px;
+  --fuente-general: "Segoe UI", serif;
+  --fuente-titulos: "Times New Roman", Times, serif;
+  --sombra-titulo: 2px 2px 5px rgb(10, 248, 169);
 }
+
+.pagina-principal {
+  font-family: var(--fuente-general);
+  font-size: 23px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.principal {
+  width: 60%;
+}
+
+aside {
+  width: 30%;
+  padding: 40px;
+  margin-top: 0%;
+}
+
+/* Fondo principal */
+.pagina-principal {
+  background-image: url(../assets/fondo\ 1.jpg);
+  background-size: contain;
+  padding: 10px;
+  background-position: center center;
+}
+
+/* Título principal (h1) */
+h1 {
+  color: black;
+  text-align: center;
+  border: 0;
+  padding: 30px;
+  margin: 0;
+  font-size: 80px;
+  font-family: var(--fuente-titulos);
+  text-shadow: var(--sombra-titulo);
+}
+
+h3 {
+  font-family: var(--fuente-titulos);
+  text-shadow: var(--sombra-titulo);
+  font-size: 40px;
+}
+
+/* ============================
+   NAVEGACIÓN
+============================ */
 
 .navegador {
-  padding: 10px 0;  /* Espacio arriba y abajo dentro del menú */
+  padding: 10px 0;
+  text-transform: uppercase;
 }
 
-
 .navegador ul {
-  list-style: none; /* Quita los puntos (viñetas) de la lista */
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Convierte los elementos <li>en una fila horizontal */
-  justify-content: center; /* Centra esa fila en la página. */
+  display: flex;
+  justify-content: center;
 }
 
 .navegador li {
-  margin: 0 15px; /* Espacio horizontal entre los elementos <li> */
+  margin: 0 20px;
 }
 
 .navegador a {
-  color: #080808;
-  padding: 10px 20px;  /* Espacio interno para agrandar los botones */
-  font-weight: bold;   /* Letras en negrita */
+  color: black;
+  padding: 30px 50px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 40px;
+  text-shadow: var(--sombra-titulo);
 }
 
-.navegador a:hover { /* Efecto para el mause*/
-  background-color: #a36edb; /* Cambia el fondo del botón al pasar el mouse */
-  border-radius: 8px;  /* Redondea los bordes del botón */
+.navegador a:hover {
+  background-color: #a36edb;
+  border-radius: 8px;
 }
-/* Imagen con borde y centrada */
-  .imagen-foto{
-    border: 5px solid #3f413f;
-    border-radius: 10px;/* coloca los bordes de la imagen de forma redonda*/
-    display: block;  /* Hace que la imagen se comporte como bloque */
-    margin: 20px auto;  /*  la centra horizontalmente */
-  }
-  /* Línea del pie de página */
-  .hr-piedepagina{
-    height: 1px;               /* Grosor de la línea */
-    background-color: #cc1ad2; /* Color de la línea*/
-    margin: 8px 2px;            /* Espaciado arriba y abajo */
-  }
-/* color de fondo pie de pagina */
-  .piedepagina{
-    background-color: #c8a9e9; 
-    color: #090909;    /* color d etexto */
-    border:0;
-  padding:30px;
-  margin: 0;
-  }
 
- /* estilo personalizado a todos los titulo h1 de la pagina */
-h1{
-  background-color:  #c8a9e9;
-  color: purple;/* color d etexto */
+/* ============================
+   IMÁGENES Y MULTIMEDIA
+============================ */
+
+.imagen-foto {
+  border: 5px groove black;
+  border-radius: 50% 10% 50% 10% /50% 10% 50% 10%;
+  margin: 30px auto;
   text-align: center;
-  border:0;
-  padding:30px;
-  margin: 0;
-  font-size: 50px;
-}
-  /* estilo de la tabla */
-  table {
-    border-collapse: collapse; /* Une los bordes de celdas */
-    margin: 10px auto; /* Centra la tabla */
-  }
-  
-  th {      /*encabezado */
-    border: 2px solid #8e24aa; /* color de borde */
-    padding: 10px;             /* Espacio interno entre el contenido y el borde*/
-    text-align: center;  /* Centra el texto de latabla*/
-  }
-
-  td{  /* Datos*/
-    border: 2px solid #8e24aa; /* color de borde */
-    padding: 10px;             /* Espacio interno entre el contenido y el borde*/
-    text-align: center;  /* Centra el texto de latabla*/
-  }
-  
-  thead {
-    background-color: #c8a9e9; /* Fondo para el encabezado */
-  }
-  .borde-video{
-    border: 4px solid #3f413f;
-    border-radius: 10px;  
-  }
-.borde-audio{
-  border: 4px solid #3f413f;
-  border-radius: 30px; 
-}
-.video-youtube{
-  border: 4px solid #3f413f;
-  border-radius: 10px; 
 }
 
- /*ESTILOS PARA CONTAC*/
- .pagina-contact{
-  background: linear-gradient(to right, #d3ced6, #fce1de);
-  color: #090909;/* Color del texto */
-  font-family: 'Segoe UI', serif; /* tipo de letra*/
- }
- .contacto{
-  background-color:  #bea9d5;
-  color: rgb(136, 69, 203);
-  border:0; /* linea que rodea al elemento*/
-  padding:30px; /* espacio interno entre el contenido y el borde */
-  margin: 0; /* es la distancia que hay del borde hacia afuera*/
-  font-size: 50px; /* tamaño de fuente*/
- }
+.borde-video {
+  border: 4px solid #0a0a0a;
+  border-radius: 10px;
+}
 
- /*ESTILOS PARA HABILIDADES*/
- .pagina-habilidades{
-  background: linear-gradient(to right, #a18aaf, #fce1de);
-  font-family: 'Segoe UI', serif;
- }
- .habilidades{
-  background-color:  #bea9d5;
-  color: rgb(115, 62, 169);
-  border:0;
-  padding:30px;
-  margin: 0;
-  font-size: 50px;
+.video-youtube {
+  border: 4px solid #060606;
+  border-radius: 10px;
+}
+
+.borde-audio {
+  border: 4px solid #fcfffc;
+  border-radius: 30px;
+}
+
+/* ============================
+   CLASES-SECCIONES
+============================ */
+.caja-seccion {
+  background-color: rgba(255, 255, 255, 0.9);/* Fondo blanco con transparencia */
+  padding: 30px;
+  margin-bottom: 60px;
+  border: var(--borde-bloque);
+  border-radius: var(--borde-radio);/* Bordes redondeados */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);/* Sombra suave */
+  color: var(--color-texto);
+}
+
+.caja-aside {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+  padding: 30px;
+  margin-bottom: 60px;
+  border: var(--borde-bloque);
+  border-radius: var(--borde-radio);/* Bordes redondeados */
+  color: var(--color-texto);
   text-align: center;
- }
- .contenedor-bloques {
-  display: flex;             /* Coloca los bloques en fila */
-  justify-content: center;   /* Centra los bloques */
-  gap: 40px;                 /* Espacio entre ellos */
-  flex-wrap: wrap;           /* Para que bajen si no caben en pantallas pequeñas */
 }
-.bloque {
-  background-color: #f2e6ff;  /* Color de fondo de cada bloque */
+/* SECCIÓN MOMENTOS FAVORITOS*/
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));/*las columnas tiene como mínimo 200px de ancho,ocupa el espacio restante de forma proporcional ( 1fr),se repiten tantas veces como quepan en el contenedor ( auto-fit)*/
+  gap: 15px;
+  padding: 20px;
+}
+
+.grid-galeria img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.hr-momentos{
+  height: 4px;
+  background-color: #ff5e5e; /* color de la línea */
+  border: none;
+  margin: 20px 0;
+}
+
+/* ============================
+   PIE DE PÁGINA
+============================ */
+.hr-piedepagina {
+  height: 1px;
+  margin: 8px 2px;
+}
+
+.piedepagina {
+  color: rgb(11, 11, 11);
+  border: 0;
+  padding: 30px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+/* ============================
+   TABLAS
+============================ */
+
+table {
+  border-collapse: collapse;
+  margin: 10px auto;
+}
+
+th,
+td {
+  border: 2px solid rgb(8, 8, 8);
   padding: 10px;
-  border: 2px solid #a36edb;  /* coloca borde de 2px */
-  border-radius: 12px;  /* redondea el borde*/
-  width: 400px;               /* Ancho del bloque */
+  text-align: center;
+}
+
+thead {
+  background-color: #fbb4c8;
+}
+
+/* ============================
+   SECCIÓN CONTACTO
+============================ */
+
+.pagina-contact {
+  background-image: url(../assets/fondo\ 1.jpg);
+  background-size: cover;
+  padding: 10px;
+  background-position: center center;
+}
+
+.titulo-perso {
+  font-family: var(--fuente-titulos);
+  text-shadow: var(--sombra-titulo);
+  font-size: 30px;
+}
+
+.texto-perso {
+  font-size: 30px;
+}
+
+.contacto {
+  color: rgb(11, 11, 11);
+  border: 0;
+  padding: 30px;
+  margin: 0;
+  font-size: 50px;
+}
+
+/* Estilo para alinear los logos uno al lado del otro */
+.logos-contacto {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;/* Espacio entre ellos */
+  flex-wrap: wrap;/* Asegura que los logos se ajusten si es necesario */
+  text-align: center;/* Centra los textos (figcaption) de bajo de la imagen */
+  margin-right: 50px;
+}
+
+.logos-contacto a,
+.logos-contacto div {
+  display: inline-flex;
+  flex-direction: column;/* Imagen arriba, texto abajo */
+  align-items: center;
+}
+
+input,
+textarea,
+select {
+  width: 10%;
+  padding: 5px;/* Espacio interno para que se vean más grandes */
+  font-size: 20px;/* Tamaño del texto */
+  border-radius: 5px;/* Bordes redondeados para mejor estética */
+  margin-bottom: 15px;/* Espacio entre los campos */
+}
+
+.infor-adicional {
+  font-size: 30px;
+}
+
+/* ============================
+   SECCIÓN HABILIDADES
+============================ */
+
+.pagina-habilidades {
+  background-image: url(../assets/fondo\ 1.jpg);
+  background-size: contain;
+  padding: 10px;
+  background-position: center;
+}
+
+.habilidades {
+  color: rgb(115, 62, 169);
+  border: 0;
+  padding: 30px;
+  margin: 0;
+  font-size: 50px;
+  text-align: center;
+}
+
+.titulo-secundario {
+  text-align: center;
+}
+
+.contenedor-bloques {
+  display: flex;/* Coloca los bloques en fila */
+  justify-content: center;/* Centra los bloques */
+  gap: 80px; /* Espacio entre ellos */
+  padding: 30px;
+  flex-wrap: wrap;/* Para que bajen si no caben en pantallas pequeñas */
+}
+
+.bloque {
+  background-color: var(--color-fondo-bloque);/* Color de fondo de cada bloque */
+  padding: 20px;
+  border: 2px solid #a36edb;/* coloca borde de 2px */
+  border-radius: 12px;/* redondea el borde*/
+  width: 400px;/* Ancho del bloque */
+  text-align: center;
 }
 
 .habilidades h2 {
   margin-bottom: 30px; /* Crea espacio debajo del titulo  h2 */
+  text-align: center;
+}
+ /* MEDIA QUERIES*/
+ @media screen and (width: 576px) {
+  body {
+    background-color: #70c7ef; /* color suave para diferenciar */
+  }
+
+  h1 {
+    font-size: 50px;
+    color: #003366;
+  }
+
+  .caja-seccion, .caja-aside {
+    padding: 20px;
+    font-size: 18px;
+    background-color: rgba(207, 131, 199, 0.9);
+  }
+}
+@media screen and (width: 768px) {
+  body {
+    background-color: #cea882;
+  }
+
+  h1 {
+    font-size: 60px;
+    color: #663300;
+  }
+
+  .caja-seccion, .caja-aside {
+    padding: 25px;
+    font-size: 20px;
+    background-color: rgba(220, 115, 115, 0.9);
+  }
+}
+@media screen and (width: 992px) {
+  body {
+    background-color: #a3e9a3;
+  }
+
+  h1 {
+    font-size: 70px;
+    color: #004d00;
+  }
+
+  .caja-seccion, .caja-aside {
+    padding: 28px;
+    font-size: 22px;
+    background-color: rgba(103, 198, 182, 0.9);
+  }
 }
